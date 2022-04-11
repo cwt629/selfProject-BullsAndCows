@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project : 숫자야구 게임</title>
+        <link href="./baseball.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Bulls and Cows - made by Won Tae Chang</h1>
+        <div class="help">
+            <button id="help_kor">도움말</button>
+            <br><br>
+            <button id="help_eng">How To Play</button>
+            <br><br>
+            <div id="howToPlay_kor">
+                <p>중복된 숫자가 없는 3자리 숫자를 맞춰봅시다!</p>
+                <p>입력한 숫자가 존재하고 <strong>위치까지 맞다면</strong> Strike!</p>
+                <p>입력한 숫자가 존재하지만 <strong>위치가 다르다면</strong> Ball!</p>
+                <p>입력한 숫자 3개가 <strong>모두 존재하지 않으면</strong> Out!</p>
+                <p>주어지는 결과로 숫자를 추리해보세요!</p>
+                <u>주의: 0은 첫번째 숫자에는 들어가지 않습니다.</u>
+                <br><br>
+                <p>이 창을 닫으려면 도움말 버튼을 클릭하세요...</p>
+                <p>Press "도움말" button to close...</p>
+            </div>
+            <div id="howToPlay_eng">
+                <p>Guess three digit number without any redundant numbers!</p>
+                <p>If the number exists, and in <strong>correct position</strong>, it's Strike!</p>
+                <p>If the number exists, but in <strong>wrong position</strong>, it's Ball!</p>
+                <p>If <strong>none of the numbers exist</strong>, it's Out!</p>
+                <p>Check out the number with the results given!</p>
+                <u>CAUTION: 0 cannot exist in first digit.</u>
+                <br><br>
+                <p>이 창을 닫으려면 How To Play 버튼을 클릭하세요...</p>
+                <p>Press "How To Play" button to close...</p>
+            </div>
+        </div>
+        <div class="content_container">
+            <form class="baseball">
+                <input class="input" maxlength="1">
+                <input class="input" maxlength="1">
+                <input class="input" maxlength="1">
+                <button id="check">COMMIT</button>
+            </form>
+        </div>
+        <br><br>
+        <div class="log_container">
+            <div class="log">
+                <p class="trial">YOUR TRY</p>
+            </div>
+        </div>
+        <script src="baseball.js"></script>
+    </body>
+</html>
